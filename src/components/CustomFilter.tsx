@@ -1,7 +1,7 @@
 import { CustomFilterProps } from "@/types";
 
-function CustomFilter({ title }: CustomFilterProps) {
+const CustomFilter = ({ title }: CustomFilterProps) => {
   return <div>CustomFilter</div>;
-}
+};
 
 export default CustomFilter;

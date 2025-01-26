@@ -1,13 +1,13 @@
 import { FieldEntryProps } from "@/types";
 import React from "react";
 
-function FieldEntry({
+const FieldEntry = ({
   title,
   entryType,
   placeholder,
   labelStyle,
   inputStyle,
-}: FieldEntryProps) {
+}: FieldEntryProps) => {
   return (
     <div className="flex flex-col gap-1">
       <label className={`font-bold ${labelStyle}`} htmlFor={title}>
@@ -21,6 +21,6 @@ function FieldEntry({
       />
     </div>
   );
-}
+};
 
 export default FieldEntry;

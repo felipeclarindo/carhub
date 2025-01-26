@@ -6,8 +6,9 @@ import SearchBar from "./SearchBar";
 import CustomFilter from "./CustomFilter";
 import SearchManufacturer from "./SearchManufacturer";
 import CarCard from "./CarCard";
-import LoginModal from "./LoginModal";
 import FieldEntry from "./FieldEntry";
+import LoginModal from "./auth/LoginModal";
+import RegisterModal from "./auth/RegisterModal";
 
 export {
   Hero,
@@ -20,4 +21,5 @@ export {
   CarCard,
   LoginModal,
   FieldEntry,
+  RegisterModal,
 };
