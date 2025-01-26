@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+
 import "./globals.css";
+import { Footer, Header } from "@/components";
 
 export const metadata: Metadata = {
-  title: "CarHub",
-  description: "CarHub is a car rental service",
+  title: "Car Hub",
+  description: "Car Hub is a car rental service",
 };
 
 export default function RootLayout({
@@ -13,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="relative">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
